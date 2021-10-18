@@ -1,0 +1,30 @@
+#rock{
+    padding-top: 100px;
+// min-height: 100vh !important;
+width: auto;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.font-text{
+    font-size: 14px;
+    }
+    
+    button[type="submit"] {
+        background: #37517e;
+        border: 0;
+        padding: 10px 35px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 10px;
+      }
+    
+      .info {
+        // border-top: 3px solid #47b2e4;
+        // border-bottom: 3px solid #47b2e4;
+        padding: 30px;
+        background: #fff;
+        // width: 100%;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+      }

@@ -1,0 +1,36 @@
+#login{
+    margin-top: 100px;
+    background-color: white;
+    min-height: 100vh !important;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+
+    .php-email-form label{
+        font-size: 15px;
+    }
+
+    .box-con{
+        padding: 1rem;
+      text-align: center;
+    }
+    
+     .php-email-form button[type="submit"] {
+        background: #37517e;
+        border: 0;
+        padding: 5px 24px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+      
+   .php-email-form button[type="submit"]:hover {
+        background: #209dd8;
+      }
+
+      .text-con{
+          font-size: 12px;
+      }
+}

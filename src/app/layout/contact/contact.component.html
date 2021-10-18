@@ -1,0 +1,98 @@
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>24901 Northwestern Highway
+              Suite 400
+              Southfield, MI 48075</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Phone:</h4>
+            <p> 877-356-3450 Ext. 2</p>
+          </div>
+
+          <!-- <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Email:</h4>
+            <p>248-356-3401</p>
+          </div> -->
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col-lg-7  mt-lg-0 d-flex align-items-stretch">
+        <!-- <div class="php-email-form"> -->
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.985760368066!2d-83.24367238503558!3d42.47059153610758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c82d15fecc1f%3A0xa29a4cd5f3a7f842!2s24901%20Northwestern%20Hwy%2C%20Southfield%2C%20MI%2048075%2C%20USA!5e0!3m2!1sen!2sin!4v1630982250659!5m2!1sen!2sin"
+            frameborder="0" style="border:0; width: 100%; height: 300px;" allowfullscreen loading="lazy"></iframe> -->
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-12 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="fname" placeholder="Your Firstname" required>
+            </div>
+            <div class="col col-12 col-md-6 form-group">
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Your Lastname" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 form-group">
+              <input type="text" name="org" class="form-control" id="org" placeholder="Organization (optional)"
+                required>
+            </div>
+            <div class="col col-12 col-md-6 form-group">
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Contact Number" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 form-group">
+              <input type="text" name="email" class="form-control" id="email" placeholder="Email address" required>
+            </div>
+          </div>
+
+          <!-- <div class="">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </div> -->
+
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+        <!-- </div> -->
+      </div>
+
+    </div>
+
+  </div>
+</section>

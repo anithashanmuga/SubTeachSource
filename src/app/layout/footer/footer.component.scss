@@ -1,0 +1,126 @@
+  
+#footer {
+  font-size: 14px;
+  background: #37517e;
+}
+
+#footer .footer-top {
+  padding: 60px 0 20px 0;
+  background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #286090;
+}
+
+
+#footer .footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+#footer .copyright  {
+  float: left;
+  color: white;
+}
+a{
+  color: white;
+}
+
+#footer .credits {
+  float: right;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  transition: 0.3s;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #footer .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #footer .copyright, #footer .credits {
+    text-align: center;
+    float: none;
+  }
+  #footer .credits {
+    padding-top: 4px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #6bc1e9;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.scroll-to-top {
+  height: 45px;
+  width: 45px;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  // background-color: #F9870F;
+  line-height: 65px;
+}
+
+.scroll-to-top .scroll-icon {
+  // font-size: 30px;
+  color: #ffffff;
+  display: inline-block;
+  // -webkit-transform: rotate(-45deg);
+  // -ms-transform: rotate(-45deg);
+  // transform: rotate(-45deg);
+}
+
+.orangeBG {
+  color: orange;
+}

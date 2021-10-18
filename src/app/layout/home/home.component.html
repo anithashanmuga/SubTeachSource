@@ -1,0 +1,50 @@
+<div class="">
+
+  <section id="home" class="">
+    <div class="overlay"></div>
+
+    <video playsinline="playsinline" autoplay="autoplay" [muted]="'muted'" loop="loop">
+      <source src="../../../assets/vedio/21730702-hd 1.mov"
+        type="video/mp4">
+    </video>
+
+    <div class="container pt-5">
+      <div class="row d-flex justify-content-center align-items-center pt-5">
+
+        <div class="col-12  py-3 text-header text-center">
+          <h2 class="display-4 pt-0 pt-md-5">Sub Teacher Source</h2>
+          <p class="lead mb-0 text-justify">Welcome to the standard and Educational Staffing.</p>
+        </div>
+        <div class="col-12">
+          <div class="btn-content col-md-12 text-center mt-md-4 mt-0 pb-4">
+            <button type="button" class="btn-style px-3" routerLink="/login">Login now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-evenly">
+        <div class="col-12 col-md-4 d-flex justify-content-lg-end justify-content-sm-start align-items-center">
+          <div class="left-area desktop-txt icon-box" [routerLink]="['/applic', 0]" routerLinkActive="router-link-active">
+            <span class="area-title">Become a substitute teacher </span>
+            <div class="product-text">
+              <p style="font-size: 12px;">Start your career in education</p>
+              <span class="text-white" [routerLink]="['/applic', 0]"
+                routerLinkActive="router-link-active" style="font-size: 12px; font-weight: 700; text-decoration: none;">Get
+                Started</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-lg-start justify-content-sm-start align-items-center">
+          <div class="right-area desktop-txt icon-box" routerLink="/contact">
+            <span class="area-title">Become a partner school district</span>
+            <div class="product-text">
+              <p style="font-size: 12px;">Explore talent & HR solutions</p>
+              <span class=" text-white" type="button" routerLink="/contact" style="font-size: 12px; font-weight: 700;">Get
+                Started</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

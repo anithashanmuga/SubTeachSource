@@ -1,0 +1,169 @@
+
+
+a {
+  position: relative;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;    position: absolute;
+    background: #0e4b83;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+	
+
+  }
+
+  a:hover:after  { 
+    width: 100%;
+    left: 0; 
+  }
+
+.navbar {
+	transition: all 0.4s;
+} 
+
+// component css goes here
+
+.header-logo {
+	width: 7.5rem;
+  text-decoration: none;
+  @media screen and(max-width: 782px) {
+        width: 5.0rem;
+        text-decoration: none;
+      }
+}
+
+.navbar-brand {
+  text-decoration: none;
+  @media screen and(max-width: 782px) {
+   
+    text-decoration: none;
+  }
+}
+
+
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(255, 232, 255));
+}
+
+.navbar-toggler-icon {
+	color: #140664a6;
+}
+
+.navbar {
+	transition: all 0.4s;
+}
+
+.navbar .nav-link {
+	color:black;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+	// color       : #555;
+	text-decoration: none;
+}
+
+.navbar .navbar-brand {
+	// color: black;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+	background: #fff;
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+	color: black;
+	font-weight: 500;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+	color          : #555;
+	text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+	// color: #555;
+	color: black;
+	font-weight: 700;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+	.navbar {
+		background: #fff;
+	}
+
+	.navbar .navbar-brand,
+	.navbar .nav-link {
+		color: #555;
+	}
+}
+
+.navbar-nav li>a {
+
+	&:hover,
+	&:focus {
+		font-weight: 800 !important;
+    color     : #232C57;
+
+	}
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link {   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+
+  
+  
+  /* Divider */
+  
+  hr {
+	width: 95%;
+	display: flex;
+	align-items: center;
+  }
+  
+  
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+//   .open-dialog
+// //   border-radius: 3px
+//   margin: 10px
+// .confirmation-dialog
+//   display: none
+
+.open-dialog{
+	border-radius: 3px;
+	// margin: 10px;
+}
+
+.confirmation-dialog{
+	display: none;
+}
