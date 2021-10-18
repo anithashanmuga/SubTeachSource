@@ -1,12 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import {Router} from '@angular/router';
-
-
-
-
-
-
 
 
 declare var $: any;
@@ -20,19 +14,22 @@ declare var $: any;
 })
 
 export class HeaderComponent implements OnInit {
-
+   
     isSubmitted = false;
     modalVisible = false;
+    public contactForm: FormGroup;
 
     // City Names
     City: any = ['Florida', 'South Dakota', 'Tennessee', 'Michigan']
+
+    constructor(public fb: FormBuilder, private router: Router) { 
+
+        this.contactForm = fb.group({
+			city: ['', Validators.required],
+			type: ['', Validators.required]
+		});
+    }
   
-    constructor(public fb: FormBuilder, private router: Router) { }
-  
-    /*########### Form ###########*/
-    contactForm = this.fb.group({
-      cityName: ['', [Validators.required]]
-    })
 
     ngOnInit() {
         $(function () {
@@ -66,18 +63,25 @@ export class HeaderComponent implements OnInit {
       }
     
       /*########### Template Driven Form ###########*/
-      onSubmit() {
+      submit() {
         this.isSubmitted = true;
-        // if (!this.registrationForm.valid) {
-        //   return false;
-        // } 
-        // else {
-        //   alert(JSON.stringify(this.registrationForm.value))
-        // }
-        this.router.navigate(['/contact']);
+      
+        if (this.contactForm.valid) {
+            // this.router.navigate(['/contact']);
+            this.router.navigate(['contact']);
+            this.closeModal();
+        }
+        else {
+			alert('Please select the City and Type')
+		}
        
-
+       
       }
+
+      public closeModal() {
+        // const video = jQuery('#myModal');
+        $('#exampleModal').modal('hide');
+	}
 
 
 
