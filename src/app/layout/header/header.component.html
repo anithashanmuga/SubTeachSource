@@ -93,10 +93,14 @@
 
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
 
-                        <li>
+                        <!-- <li>
                             <a class="dropdown-item py-2" pageScroll href="#perks" [routerLink]="['/jobs', 'perks']"
                                 [pageScrollDuration]="800">Job perks</a>
-                        </li>
+                        </li> -->
+
+                        <li class="nav-item active"><a href="#perks" [routerLink]="['/jobs', 'perks']"
+                            pageScroll [pageScrollDuration]="800" class="nav-link text-uppercase font-weight-bold">Job perks
+                          </a></li>
 
                         <li class="nav-item">
                             <a class="dropdown-item py-2" pageScroll href="#job" [routerLink]="['/jobs', 'job']"

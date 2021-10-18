@@ -1,9 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import {Router} from '@angular/router';
-// import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
 
-import { DOCUMENT } from '@angular/common';
+
+
+
+
 
 
 
